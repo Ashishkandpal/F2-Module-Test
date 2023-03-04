@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogging Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="blog">
+      <div class="container">
+        <header>
+          <div class="nav">
+            <h3>Blogging Website</h3>
+            <button class="btn create__btn">Create New Post</button>
+          </div>
+        </header>
+        <main></main>
+      </div>
+      <div class="modal__container modal__container--hidden">
+        <div class="modal--content modal__heading">
+          <h2 class="heading__h2">Create a Post</h2>
+          <span class="cross">X</span>
+        </div>
+        <div class="modal__post__content">
+          <div class="modal--content modal__text__input">
+            <input
+              class="post__input"
+              type="text"
+              name="post"
+              placeholder="Enter Your Heading..."
+            />
+          </div>
+          <div class="modal--content modal__textArea__input">
+            <textarea
+              class="post__textArea"
+              name="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Enter Your Blog Post..."
+            ></textarea>
+          </div>
+        </div>
+        <div class="modal--content modal__btns">
+          <button class="modal__btn modal__post__btn modal__save__btn">
+            Publish Post
+          </button>
+          <button class="modal__btn modal__cancel__btn modal__del__btn">
+            Cancel Post
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
